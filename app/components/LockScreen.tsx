@@ -65,9 +65,7 @@ export default function LockScreen({ onUnlock }: { onUnlock: () => void }) {
               <Lock className="h-8 w-8 text-white" strokeWidth={1.7} />
             </div>
 
-            <p className="text-center text-[11px] tracking-[0.4em] text-white/65">
-              iPhone style unlock
-            </p>
+            
             <h1 className="mt-3 text-center font-display text-5xl italic text-white sm:text-6xl">
               Enter PIN
             </h1>
@@ -152,7 +150,7 @@ export default function LockScreen({ onUnlock }: { onUnlock: () => void }) {
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/12 bg-white/8">
                 <Lock size={15} strokeWidth={1.7} />
               </span>
-              <p className="text-xs tracking-[0.28em]">1999 unlocks the heart</p>
+              <p className="text-xs tracking-[0.28em]">You Birth Year is Pin </p>
             </div>
           </div>
         </div>
