@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { Heart, Sparkles } from "lucide-react";
 
 const photos = [
-  { src: "/photos/01.JPG", alt: "A cherished moment with your wife", caption: "A smile I still replay in my mind." },
-  { src: "/photos/02.JPG", alt: "A beautiful portrait of your wife", caption: "My favorite kind of quiet is with you." },
-  { src: "/photos/03.JPG", alt: "A warm memory together", caption: "Every photo feels like a soft reminder." },
-  { src: "/photos/04.JPG", alt: "Another sweet photo of your wife", caption: "You make ordinary moments feel golden." },
-  { src: "/photos/05.JPG", alt: "A loving picture of your wife", caption: "I keep finding new ways to miss you." },
-  { src: "/photos/06.JPG", alt: "A romantic memory", caption: "Home is whatever room you are in." },
+  { src: "/photos/01.jpg", alt: "A cherished moment with your wife", caption: "A smile I still replay in my mind." },
+  { src: "/photos/02.jpg", alt: "A beautiful portrait of your wife", caption: "My favorite kind of quiet is with you." },
+  { src: "/photos/03.jpg", alt: "A warm memory together", caption: "Every photo feels like a soft reminder." },
+  { src: "/photos/04.jpg", alt: "Another sweet photo of your wife", caption: "You make ordinary moments feel golden." },
+  { src: "/photos/05.jpg", alt: "A loving picture of your wife", caption: "I keep finding new ways to miss you." },
+  { src: "/photos/06.jpg", alt: "A romantic memory", caption: "Home is whatever room you are in." },
 ];
 
 const quotes = [
