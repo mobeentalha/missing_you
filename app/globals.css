@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+
+:root {
+  --color-ink: #0b0d17;
+  --color-ink-2: #14172a;
+  --color-cream: #f5ede3;
+  --color-gold: #e8b96a;
+  --color-rose: #d88c9a;
+  --color-plum: #4a3b5c;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-cream: var(--color-cream);
+  --color-gold: var(--color-gold);
+  --color-rose: var(--color-rose);
+  --color-plum: var(--color-plum);
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  min-height: 100dvh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-6px); }
+  40%, 60% { transform: translateX(6px); }
+}
+.animate-shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes drift {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+.animate-drift {
+  animation: drift 6s ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.82; }
+  50% { opacity: 1; }
+  55% { opacity: 0.88; }
+}
+.animate-flicker {
+  animation: flicker 4s ease-in-out infinite;
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+}
+
+.font-body {
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-rose) 55%, white 0%);
+  color: white;
+}
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.glass-card {
+  animation: float 5s ease-in-out infinite;
+}
